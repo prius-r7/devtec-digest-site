@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevTec Digest</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">DevTec Digest</a>
+        <button id="add-discord" class="btn primary">Add to Discord</button>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Stay on top of your Discord chatter.</h1>
+        <p>
+          Our lightweight bot summarizes conversations, flags unanswered
+          questions and keeps your community engaged – no API costs.
+        </p>
+        <div class="cta-buttons">
+          <button id="cta-add-discord" class="btn primary">Add to Discord</button>
+          <button id="cta-waitlist" class="btn secondary">Join Waitlist</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features section -->
+    <section id="features" class="features">
+      <div class="container section-header">
+        <h2>Features</h2>
+        <p>Everything you need to tame your channels.</p>
+      </div>
+      <div class="container feature-grid">
+        <div class="feature-card">
+          <h3>Daily Digest</h3>
+          <p>
+            Automatic summary delivered each day to a chosen channel,
+            covering discussions across all channels on your server.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Unanswered Questions</h3>
+          <p>
+            We identify messages that look like questions and alert you when
+            they haven’t received a response, so nobody is left hanging.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>No APIs Required</h3>
+          <p>
+            Use the built‑in Ollama integration for local summaries or
+            plug in your own model – no external API costs.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Lightweight & Secure</h3>
+          <p>
+            Self‑host the bot on your machine or VPS. Your data never
+            leaves your infrastructure.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works section -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="container section-header">
+        <h2>How It Works</h2>
+        <p>Simple setup, powerful results.</p>
+      </div>
+      <div class="container steps-grid">
+        <div class="step">
+          <h3>Install the bot</h3>
+          <p>
+            Invite DevTec Digest to your server using the “Add to Discord”
+            button. Choose the channels it can read.
+          </p>
+        </div>
+        <div class="step">
+          <h3>Configure</h3>
+          <p>
+            Set your digest frequency (daily/weekly) and define
+            channels to monitor. No coding required.
+          </p>
+        </div>
+        <div class="step">
+          <h3>Get summaries</h3>
+          <p>
+            You’ll receive digest posts and unanswered question alerts
+            directly in your Discord. Stay informed in seconds.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing section -->
+    <section id="pricing" class="pricing">
+      <div class="container section-header">
+        <h2>Pricing</h2>
+        <p>Flexible options for teams of all sizes.</p>
+        <div class="toggle-wrapper">
+          <span>Monthly</span>
+          <label class="switch">
+            <input type="checkbox" id="billing-toggle" />
+            <span class="slider round"></span>
+          </label>
+          <span>Yearly (save 2 months)</span>
+        </div>
+      </div>
+      <div class="container pricing-grid">
+        <!-- Card: Free -->
+        <div class="price-card">
+          <h3>Self‑Host</h3>
+          <p class="price"><span class="currency">£</span><span class="amount" data-monthly="0" data-yearly="0">0</span><span class="period"> /mo</span></p>
+          <ul class="features-list">
+            <li>Run locally or on your own server</li>
+            <li>Ollama integration</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn secondary">Download</button>
+        </div>
+        <!-- Card: Starter -->
+        <div class="price-card">
+          <h3>Starter</h3>
+          <p class="price"><span class="currency">£</span><span class="amount" data-monthly="9" data-yearly="90">9</span><span class="period"> /mo</span></p>
+          <ul class="features-list">
+            <li>Managed hosting</li>
+            <li>1 server included</li>
+            <li>Email support</li>
+          </ul>
+          <button class="btn primary">Get Started</button>
+        </div>
+        <!-- Card: Pro -->
+        <div class="price-card">
+          <h3>Pro</h3>
+          <p class="price"><span class="currency">£</span><span class="amount" data-monthly="29" data-yearly="290">29</span><span class="period"> /mo</span></p>
+          <ul class="features-list">
+            <li>Multiple servers</li>
+            <li>Priority support</li>
+            <li>Early access features</li>
+          </ul>
+          <button class="btn primary">Upgrade</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section id="faq" class="faq">
+      <div class="container section-header">
+        <h2>FAQs</h2>
+      </div>
+      <div class="container faq-list">
+        <details>
+          <summary>How do I install the bot?</summary>
+          <p>
+            Click “Add to Discord” and follow the standard Discord
+            authorization flow. You’ll need permission to manage bots in
+            your server.
+          </p>
+        </details>
+        <details>
+          <summary>Do I need to pay for API usage?</summary>
+          <p>
+            No. With the self‑hosted version you can run summaries locally
+            using Ollama. Our managed plans use our own infrastructure.
+          </p>
+        </details>
+        <details>
+          <summary>Can I customize the digest interval?</summary>
+          <p>
+            Absolutely. Set the interval in the bot’s configuration file
+            or via slash commands.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="year"></span> DevTec Digest. All rights reserved.</p>
+        <p>
+          Built with 💙 by your team. <a href="#">Docs</a> | <a href="#">Privacy
+          Policy</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
