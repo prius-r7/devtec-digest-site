@@ -308,3 +308,10 @@ details summary {
 .footer-content a:hover {
   text-decoration: underline;
 }
+
+
+/* Hide Self-Host plan */
+#pricing .price-card:first-of-type {
+  display: none;
+}
+
