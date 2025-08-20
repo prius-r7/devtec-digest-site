@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | SynoptiQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">SynoptiQ</a>
+    </div>
+  </header>
+  
+  <section class="signup-section">
+    <div class="container">
+      <h1>Create your account</h1>
+      <p>Sign up to start using SynoptiQ.</p>
+
+      <div class="signup-options">
+        <button id="google-signup" class="btn primary">Sign up with Google</button>
+        <button id="microsoft-signup" class="btn secondary">Sign up with Outlook</button>
+        <button id="email-signup-toggle" class="btn secondary">Sign up with Email</button>
+      </div>
+
+      <form id="email-signup-form" style="display: none; margin-top: 1rem;">
+        <input type="email" id="signup-email" placeholder="Email address" required />
+        <input type="password" id="signup-password" placeholder="Password" required />
+        <button type="submit" class="btn primary" style="margin-top: 0.5rem;">Create Account</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    // Placeholder handlers for toggling email form visibility.
+    const emailToggle = document.getElementById('email-signup-toggle');
+    const emailForm = document.getElementById('email-signup-form');
+
+    emailToggle.addEventListener('click', () => {
+      emailForm.style.display = emailForm.style.display === 'none' ? 'block' : 'none';
+    });
+
+    // Placeholder actions for sign-in/out; actual OAuth flows require integration.
+    document.getElementById('google-signup').addEventListener('click', () => {
+      alert('Google sign-up not yet configured. Please set up OAuth client ID.');
+    });
+    document.getElementById('microsoft-signup').addEventListener('click', () => {
+      alert('Microsoft sign-up not yet configured. Please set up application ID.');
+    });
+
+    document.getElementById('email-signup-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Email sign-up not yet configured. Please implement backend to process signup.');
+    });
+  </script>
+</body>
+</html>
